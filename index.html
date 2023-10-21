@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS split image</title>
+    <style>
+      body {
+        background-color: white;
+        margin: 0px;
+        padding: 0px;
+      }
+      .background {
+        background-image: url(./images/instagram.avif);
+        height: 1000px;
+        width: 200px;
+        z-index: -1;
+
+        position: relative;
+        padding-left: 30%;
+        padding-top: 8%;
+      }
+      .first,
+      .second,
+      .third {
+        position: relative;
+      }
+      img {
+        height: 100px;
+      }
+      .krishna {
+        position: absolute;
+
+        padding-bottom: 55%;
+        left: 25%;
+      }
+      .logo {
+        height: 1rem !important;
+        margin-left: 110%;
+
+        transform: scale(5);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="logo">
+        <marquee behavior="head" direction=""></marquee>
+        <img src="./images/logo.jpg" alt="" />
+      </div>
+      <div class="krishna">
+        <!-- <img src="instagram.avif" alt="" id="insta" /> -->
+        <!-- <img src="flw.jpg" alt="frame" height="600px" /> -->
+        <div class="first">
+          <img src="./images/9.jpg" alt="" />
+          <img src="./images/8.jpg" alt="" />
+          <img src="./images/7.jpg" alt="" />
+        </div>
+        <div class="second">
+          <img src="./images/6.jpg" alt="" />
+          <img src="./images/5.jpg" alt="" />
+          <img src="./images/4.jpg" alt="" />
+        </div>
+        <div class="third">
+          <img src="./images/3.jpg" alt="" />
+          <img src="./images/2.jpg" alt="" />
+          <img src="./images/1.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
